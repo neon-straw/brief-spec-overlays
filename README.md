@@ -56,22 +56,22 @@ Additional maintainer notes and source material live in `docs/`.
 Install upstream skills separately:
 
 ```bash
-npx skills add mattpocock/skills --agent codex
-npx skills add obra/superpowers --agent codex
+npx skills add mattpocock/skills
+npx skills add obra/superpowers
 ```
 
 Install this repository:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays
+npx skills add neon-straw/brief-spec-overlays
 ```
 
 Install one skill:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays --skill brief-writer
-npx skills add <github-user>/brief-spec-overlays --skill to-spec
-npx skills add <github-user>/brief-spec-overlays --skill workflow-composer
+npx skills add neon-straw/brief-spec-overlays --skill brief-writer
+npx skills add neon-straw/brief-spec-overlays --skill to-spec
+npx skills add neon-straw/brief-spec-overlays --skill workflow-composer
 ```
 
 ## License and Attribution

@@ -20,25 +20,23 @@ Install the upstream skills directly from their original repositories if you wan
 the full workflow:
 
 ```bash
-npx skills add mattpocock/skills --agent codex
-npx skills add obra/superpowers --agent codex
+npx skills add mattpocock/skills
+npx skills add obra/superpowers
 ```
 
 Install this repository:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays --agent codex
+npx skills add neon-straw/brief-spec-overlays
 ```
 
 Install only one skill:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays --skill brief-writer --agent codex
-npx skills add <github-user>/brief-spec-overlays --skill to-spec --agent codex
-npx skills add <github-user>/brief-spec-overlays --skill workflow-composer --agent codex
+npx skills add neon-straw/brief-spec-overlays --skill brief-writer
+npx skills add neon-straw/brief-spec-overlays --skill to-spec
+npx skills add neon-straw/brief-spec-overlays --skill workflow-composer
 ```
-
-Replace `<github-user>` with the GitHub owner that publishes this repository.
 
 ## When To Use Each Skill
 
@@ -90,15 +88,15 @@ the agent to implement and verify the change.
 
 Keep one canonical artifact per layer:
 
-| Layer | Typical artifact |
-| --- | --- |
-| Scope and why | `docs/brief.md` or a feature brief |
-| Domain language | `CONTEXT.md`, `CONTEXT-MAP.md`, and `docs/adr/` |
-| Product requirements | `.scratch/<feature>/PRD.md` or a linked tracker issue |
-| Complex design | `.scratch/<feature>/spec/` |
-| Phase order | `.scratch/<feature>/plan/` or an accepted implementation plan |
-| Work items | `.scratch/<feature>/issues/` or GitHub/GitLab issues |
-| Implementation truth | branch, worktree, code, tests, PR, and verified behavior |
+| Layer                | Typical artifact                                              |
+| -------------------- | ------------------------------------------------------------- |
+| Scope and why        | `docs/brief.md` or a feature brief                            |
+| Domain language      | `CONTEXT.md`, `CONTEXT-MAP.md`, and `docs/adr/`               |
+| Product requirements | `.scratch/<feature>/PRD.md` or a linked tracker issue         |
+| Complex design       | `.scratch/<feature>/spec/`                                    |
+| Phase order          | `.scratch/<feature>/plan/` or an accepted implementation plan |
+| Work items           | `.scratch/<feature>/issues/` or GitHub/GitLab issues          |
+| Implementation truth | branch, worktree, code, tests, PR, and verified behavior      |
 
 If your repository has `AGENTS.md`, `CLAUDE.md`, tracker instructions, ADRs, or
 branch-specific notes, those local rules take priority over the examples above.

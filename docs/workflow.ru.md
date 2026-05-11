@@ -21,25 +21,23 @@ Brief Spec Overlays - это небольшой набор agent skills, кот�
 репозиториев:
 
 ```bash
-npx skills add mattpocock/skills --agent codex
-npx skills add obra/superpowers --agent codex
+npx skills add mattpocock/skills
+npx skills add obra/superpowers
 ```
 
 Установите этот репозиторий:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays --agent codex
+npx skills add neon-straw/brief-spec-overlays
 ```
 
 Установите только один skill:
 
 ```bash
-npx skills add <github-user>/brief-spec-overlays --skill brief-writer --agent codex
-npx skills add <github-user>/brief-spec-overlays --skill to-spec --agent codex
-npx skills add <github-user>/brief-spec-overlays --skill workflow-composer --agent codex
+npx skills add neon-straw/brief-spec-overlays --skill brief-writer
+npx skills add neon-straw/brief-spec-overlays --skill to-spec
+npx skills add neon-straw/brief-spec-overlays --skill workflow-composer
 ```
-
-Замените `<github-user>` на GitHub-владельца опубликованного репозитория.
 
 ## Когда использовать каждый skill
 
@@ -91,15 +89,15 @@ workflow-composer
 
 Держите один канонический artifact на каждый слой:
 
-| Слой | Типичный artifact |
-| --- | --- |
-| Scope и why | `docs/brief.md` или feature brief |
-| Доменный язык | `CONTEXT.md`, `CONTEXT-MAP.md`, `docs/adr/` |
-| Product requirements | `.scratch/<feature>/PRD.md` или linked tracker issue |
-| Complex design | `.scratch/<feature>/spec/` |
-| Порядок фаз | `.scratch/<feature>/plan/` или принятый implementation plan |
-| Work items | `.scratch/<feature>/issues/` или GitHub/GitLab issues |
-| Implementation truth | branch, worktree, code, tests, PR и verified behavior |
+| Слой                 | Типичный artifact                                           |
+| -------------------- | ----------------------------------------------------------- |
+| Scope и why          | `docs/brief.md` или feature brief                           |
+| Доменный язык        | `CONTEXT.md`, `CONTEXT-MAP.md`, `docs/adr/`                 |
+| Product requirements | `.scratch/<feature>/PRD.md` или linked tracker issue        |
+| Complex design       | `.scratch/<feature>/spec/`                                  |
+| Порядок фаз          | `.scratch/<feature>/plan/` или принятый implementation plan |
+| Work items           | `.scratch/<feature>/issues/` или GitHub/GitLab issues       |
+| Implementation truth | branch, worktree, code, tests, PR и verified behavior       |
 
 Если в репозитории есть `AGENTS.md`, `CLAUDE.md`, tracker instructions, ADR или
 branch-specific notes, локальные правила имеют приоритет над примерами выше.
